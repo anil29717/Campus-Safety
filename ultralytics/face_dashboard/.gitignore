@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Local env
+.env
+.venv/
+venv/
+
+# Downloaded ML models (auto-fetched on first run)
+models/*
+!models/.gitkeep
+
+# Streamlit / local caches
+.streamlit/
+
+# IDE
+.idea/
+.vscode/

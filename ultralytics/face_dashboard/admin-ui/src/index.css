@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-campus-700 bg-campus-900/80 p-5 shadow-lg backdrop-blur;
+  }
+  .btn-primary {
+    @apply rounded-lg bg-campus-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-600 disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply rounded-lg border border-campus-700 px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-campus-800;
+  }
+  .badge {
+    @apply inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+}

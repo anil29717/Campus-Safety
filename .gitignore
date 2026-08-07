@@ -10,7 +10,7 @@ desktop.ini
 *.swo
 *~
 
-# Python (root-level scripts)
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -25,3 +25,40 @@ env/
 
 # Cursor / local tooling
 .cursor/
+
+# Nested git object backups (too large for GitHub; use git clone instead)
+**/git-backup/
+
+# Open-source MobileNetV3 (clone: https://github.com/d-li14/mobilenetv3.pytorch)
+mobilenetv3.pytorch/
+
+# Node / frontend deps (run: npm install)
+**/node_modules/
+
+# Virtual envs inside project
+**/.venv/
+
+# Model weights / checkpoints (downloaded at runtime or from upstream)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+*.tflite
+*.pb
+*.mlmodel
+*.torchscript
+**/pretrained/
+
+# Ultralytics local / generated artifacts
+ultralytics/runs/
+ultralytics/ultralytics.egg-info/
+ultralytics/data/
+ultralytics/.env
+ultralytics/.github/
+
+# Optional Ultralytics upstream bulk (available from https://github.com/ultralytics/ultralytics)
+ultralytics/docs/
+ultralytics/examples/
+ultralytics/docker/
+ultralytics/tests/
